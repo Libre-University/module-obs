@@ -4,8 +4,8 @@
 
 ## Faz 0: Hazırlık (davet öncesi)
 
-- [ ] `platform-api` modül şablonundan paket iskeleti (`libre-university-obs`)
-- [ ] CI: ruff, mypy, pytest (modül test düzeneğiyle), migration kontrolü
+- [ ] `platform-api` modül şablonundan (`gonew`) Go modülü iskeleti (`github.com/Libre-University/module-obs`), `core.Register` ile kayıt
+- [ ] CI: gofmt, go vet, golangci-lint, `go test -race` (`core/coretest` ile), sqlc/goose migration kontrolü
 - [ ] Ders açma, ders kayıt ve not girişi iş kurallarının Given/When/Then kabul kriterleri olarak yazılması
 - [ ] OBS alan sözlüğü (şube, kontenjan, AKTS, danışman onayı, harf notu…)
 - [ ] Modül README'sinde kurulum ve geliştirme adımları
