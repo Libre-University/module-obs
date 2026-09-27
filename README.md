@@ -2,7 +2,7 @@
 
 LibreUniversity **Öğrenci Bilgi Sistemi (OBS/SIS)** modülü. Öğrencinin kayıttan mezuniyete kadar resmi akademik süreçlerini yönetir ([MODULES.md §2](https://github.com/Libre-University/docs/blob/main/MODULES.md), [FR-02](https://github.com/Libre-University/docs/blob/main/FUNCTIONAL_REQUIREMENTS.md)).
 
-Bu repo, `platform-api` uygulamasına kurulan bağımsız bir Django uygulama paketidir (`libre-university-obs`). Çekirdeğe yalnızca `libre-university-core` arayüzü üzerinden erişir ([ADR-0010](https://github.com/Libre-University/docs/blob/main/docs/adr/0010-develop-modules-as-separate-packages.md)).
+Bu repo, `platform-api`'ye derleme sırasında eklenen bağımsız bir Go modülüdür (`github.com/Libre-University/module-obs`). Çekirdeğe yalnızca `platform-api/core` genel arayüzü üzerinden erişir ([ADR-0010](https://github.com/Libre-University/docs/blob/main/docs/adr/0010-develop-modules-as-separate-packages.md)).
 
 ## Ne İş Yapar?
 
@@ -22,7 +22,7 @@ Bu repo, `platform-api` uygulamasına kurulan bağımsız bir Django uygulama pa
 
 | Faz | Bu repoda yapılacaklar |
 | --- | --- |
-| Faz 0 | Modül şablonundan iskelet, CI, OBS iş kurallarının kabul kriterleri olarak yazılması, alan sözlüğü |
+| Faz 0 | Go modül şablonundan iskelet, CI, OBS iş kurallarının kabul kriterleri olarak yazılması, alan sözlüğü |
 | Faz 1 | `Student`, `Curriculum`, `CurriculumCourse` modelleri ve yönetim API'leri |
 | Faz 2 | Ders açma, ders kayıt ve kuyruk, danışman onayı, not girişi, yük testi (MVP'nin ana akışları) |
 | Faz 3 | Transkript ve öğrenci belgesi, bildirim entegrasyonu, mobil için okuma API'leri |
